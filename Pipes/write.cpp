@@ -4,7 +4,12 @@ int main(){
 
 	char buff[BUFFLEN] = {"My name is Hello and surname is World\n"};
 
-	int file_d = open(FILENAME, O_WRONLY|O_CREAT, 0777);
+	int response = creat(FILENAME, 0777);
+	if(!response){	
+		printf("Unsuccesfull creation of file \"%s\" in dir %s\n", FILENAME, get_current_dir_name());
+	}
+
+	int file_d = open(FILENAME, O_WRONLY);
 	
 	if(file_d < 0){
 		printf("Not able to open file %s\n", FILENAME);
