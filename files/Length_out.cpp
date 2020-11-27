@@ -33,7 +33,7 @@ main(int argc, char *argv[]){  //Программа изменяет длмну 
 	}
 	else if(read(file_d, buff, file_length) < 0){
 		fprintf(stderr, "Not able to read from %s properly\n", argv[1]);
-		exit(NOT_OPENED_FILE);
+		exit(FAILED_READING_FILE);
 	}
 	else{
 		printf("Your file contains:\n---\n");

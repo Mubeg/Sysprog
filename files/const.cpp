@@ -17,6 +17,11 @@ const my_error_t 	WRONG_USAGE		= __LINE__ - ERROR_CONST_START_LINE;
 const my_error_t 	HELP_TRIGGERED  	= __LINE__ - ERROR_CONST_START_LINE;
 const my_error_t 	NOT_OPENED_FILE  	= __LINE__ - ERROR_CONST_START_LINE;
 const my_error_t 	NOT_CLOSED_FILE  	= __LINE__ - ERROR_CONST_START_LINE;
+const my_error_t 	FAILED_READING_FILE  	= __LINE__ - ERROR_CONST_START_LINE;
+const my_error_t 	OUT_OF_BOUNDS	  	= __LINE__ - ERROR_CONST_START_LINE;
+const my_error_t 	FILE_DOES_NOT_EXIST  	= __LINE__ - ERROR_CONST_START_LINE;
+const my_error_t 	FILE_EXISTS	  	= __LINE__ - ERROR_CONST_START_LINE;
+const my_error_t 	LINK_CREATION_ERROR  	= __LINE__ - ERROR_CONST_START_LINE;
 
 //pretty when prints
 #define MUBEG_SIGNATURE "\n\n\t\t\t\t\t\t\t\t      -Mubeg.inc\n"
